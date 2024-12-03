@@ -196,52 +196,52 @@
             <h2>Contact Us</h2>
             <h3><a href="https://wa.me/message/C6BXLS5QEZSSC1">WhatsApp</a> | Or Call: +256757732991, +256762262172 </h3>
             <h2>Or Email us</h2>
-            <form action="https://formspree.io/f/your-form-id" method="POST" onsubmit="sendWhatsAppMessage(event)">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </section>
+            <form id="contact-form" method="POST">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+</form>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    // Initialize EmailJS with your public key
+    emailjs.init('nNTicm7T6tckV92re');
+    
+    // Function to handle form submission
+    function sendForm(event) {
+        event.preventDefault();  // Prevent the default form submission
         
-        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        <script>
-            // Initialize EmailJS with your public key
-            emailjs.init('nNTicm7T6tckV92re');
+        var form = event.target;
+        var formData = new FormData(form);
         
-            // Function to handle form submission
-            function sendForm(event) {
-                event.preventDefault();
-        
-                var form = event.target;
-                var formData = new FormData(form);
-        
-                // Send email using EmailJS
-                emailjs.sendForm('service_42120d9', 'template_l32up3i', formData)
-                    .then(
-                        function(response) {
-                            console.log('SUCCESS', response);
-                            alert('Message sent successfully!');
-                        },
-                        function(error) {
-                            console.log('FAILED', error);
-                            alert('Failed to send message. Please try again!');
-                        }
-                    );
-            }
-        
-            // Attach the sendForm function to the form submission event
-            document.querySelector('form').addEventListener('submit', sendForm);
-        </script>
+        // Send email using EmailJS
+        emailjs.sendForm('service_42120d9', 'template_l32up3i', formData)
+            .then(
+                function(response) {
+                    console.log('SUCCESS', response);
+                    alert('Message sent successfully!');
+                },
+                function(error) {
+                    console.log('FAILED', error);
+                    alert('Failed to send message. Please try again!');
+                }
+            );
+    }
+
+    // Attach the sendForm function to the form submission event
+    document.getElementById('contact-form').addEventListener('submit', sendForm);
+</script>
+
     </main>
 
     <footer>
