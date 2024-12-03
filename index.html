@@ -196,7 +196,7 @@
             <h2>Contact Us</h2>
             <h3><a href="https://wa.me/message/C6BXLS5QEZSSC1">WhatsApp</a> | Or Call: +256757732991, +256762262172 </h3>
             <h2>Or Email us</h2>
-            <form id="contact-form" method="POST">
+          <form id="contact-form" method="POST">
     <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -216,32 +216,33 @@
 <script>
     // Initialize EmailJS with your public key
     emailjs.init('nNTicm7T6tckV92re');
-    
+
     // Function to handle form submission
     function sendForm(event) {
-        event.preventDefault();  // Prevent the default form submission
-        
-        var form = event.target;
-        var formData = new FormData(form);
-        
-        // Send email using EmailJS
-        emailjs.sendForm('service_42120d9', 'template_l32up3i', formData)
+        event.preventDefault(); // Prevent default form submission
+
+        const form = document.getElementById('contact-form'); // Select the form by ID
+        if (!form) {
+            console.error("Form not found!");
+            return;
+        }
+
+        emailjs.sendForm('service_42120d9', 'template_l32up3i', form)
             .then(
-                function(response) {
-                    console.log('SUCCESS', response);
+                function (response) {
+                    console.log('SUCCESS', response.status, response.text);
                     alert('Message sent successfully!');
                 },
-                function(error) {
+                function (error) {
                     console.log('FAILED', error);
                     alert('Failed to send message. Please try again!');
                 }
             );
     }
 
-    // Attach the sendForm function to the form submission event
+    // Attach the sendForm function to the form's submit event
     document.getElementById('contact-form').addEventListener('submit', sendForm);
 </script>
-
     </main>
 
     <footer>
