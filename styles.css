@@ -59,35 +59,26 @@ header nav a:hover {
   color: #00ccff;
 }
 
-/* === Hero Section === */
+/* Hero Section */
 .hero {
-  background: linear-gradient(to right, #004466, #0077aa);
-  color: white;
-  padding: 5rem 2rem;
-  text-align: center;
+    text-align: left;
+    padding: 50px 5%;
+    background-color: #eaf4ff;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 .hero .btn {
-  margin: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #00ccff;
-  color: #004466;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-}
-
-.hero .btn:hover {
-  background-color: #0099cc;
-  color: #fff;
+    background-color: #0a84ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
 }
 
 /* === Section === */
