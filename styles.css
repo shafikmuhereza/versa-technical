@@ -26,39 +26,65 @@ body {
   margin: auto;
 }
 
-/* === Header === */
+/* Header Styles */
 header {
-  background-color: #ffffff;
-  color: #fff;
-  padding: 1rem 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    background: #ffffff; /* Adjust as needed */
+    padding: 15px 0;
 }
 
-header .logo img {
-  max-height: 60px;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 0.5rem;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-header nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+.logo-img {
+    width: 60px; /* Adjust size as needed */
+    height: auto;
+    max-height: 60px;
+    margin-right: 10px;
 }
 
-header nav a:hover {
-  color: #00ccff;
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Adjust text color */
+}
+
+.logo p {
+    font-size: 14px;
+    color: #666;
+    margin-left: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Adjust hover color */
 }
 
 /* Hero Section */
