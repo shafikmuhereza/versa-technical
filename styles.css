@@ -44,6 +44,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    width: 20px;
 }
 
 .logo-img {
