@@ -58,29 +58,32 @@ header {
 }
 
 /* === Navigation === */
-/* Flex layout for nav */
-.main-nav {
+nav ul {
+  list-style: none;
   display: flex;
   gap: 20px;
-  justify-content: center; /* or space-between */
+  justify-content: center; /* or space-between or flex-end */
   align-items: center;
-  padding: 10px 0;
+  padding: 0;
+  margin: 0;
 }
 
-/* Style for nav links */
-.main-nav .nav {
+nav ul li {
+  /* optional spacing or styling */
+}
+
+nav ul li a {
   color: #0a84ff;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease;
-  padding: 8px 12px;
+  padding: 8px 16px;
   border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect */
-.main-nav .nav:hover {
-  color: #ffffff;
+nav ul li a:hover {
   background-color: #0a84ff;
+  color: #fff;
 }
 /* === Hero Section === */
 .hero {
