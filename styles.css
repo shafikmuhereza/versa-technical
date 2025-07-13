@@ -11,6 +11,7 @@
   transform: translateY(20px);
   animation: fadeSlideIn 1.2s ease-out forwards;
   animation-delay: 0.9s;
+  color: #0a84ff;
 }
 
 @keyframes fadeSlideIn {
@@ -137,8 +138,7 @@ nav ul li a:hover {
   display: inline-block;
   padding: 20px;
   margin: 20px 0;
-  border: 2px solid transparent;
-  border-radius: 12px;
+  border: none;
   background-color: #c4c9cc;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   opacity: 0;
@@ -162,7 +162,7 @@ nav ul li a:hover {
   100% {
     opacity: 1;
     transform: scale(1);
-    border-color: #0a84ff;
+    border-color: #f4f4f9;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
   }
 }
