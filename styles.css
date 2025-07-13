@@ -142,7 +142,7 @@ nav ul li a: hover {
   100% {
     opacity: 1;
     transform: scale(1);
-    border-color: #007BFF;
+    border-color: auto;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
     background-color: #f4f4f9;
   }
