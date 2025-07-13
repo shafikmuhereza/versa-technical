@@ -21,7 +21,7 @@ body {
 
 /* === Layout Containers === */
 .container {
-  width: auto;
+  width: 90%;
   max-width: 1200px;
   margin: auto;
 }
@@ -47,9 +47,9 @@ header {
 }
 
 .logo-img {
-    width: 60px; /* Adjust size as needed */
+    width: 20px; /* Adjust size as needed */
     height: auto;
-    max-height: 60px;
+    max-height: 20px;
     margin-right: 10px;
 }
 
