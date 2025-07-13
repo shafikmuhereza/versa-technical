@@ -30,6 +30,7 @@ body {
 header {
     background: #eaf4ff; /* Adjust as needed */
     padding: 8px 0;
+    max-height: 20px;
 }
 
 .container {
