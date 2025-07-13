@@ -21,7 +21,7 @@ body {
 
 /* === Layout Containers === */
 .container {
-  width: 90%;
+  width: auto;
   max-width: 1200px;
   margin: auto;
 }
