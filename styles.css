@@ -101,6 +101,7 @@ nav ul li a: hover {
 .hero h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    color: #0a84ff;
 }
 
 .hero .btn {
@@ -194,7 +195,7 @@ nav ul li a: hover {
   border-radius: 8px;
   transition: transform 0.3s;
 }
-
+.animated-box:hover,
 .service-item:hover,
 .product-item:hover {
   transform: translateY(-5px);
