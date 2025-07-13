@@ -31,7 +31,7 @@ header {
     background: #eaf4ff; /* Adjust as needed */
     padding: 8px 0;
     height: auto;
-    max-height: 120px;
+    max-height: autopx;
 }
 
 .container {
