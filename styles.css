@@ -68,27 +68,16 @@ header {
     color: #666;
     margin-left: 5px;
 }
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    padding: 0;
-    color: #0a84ff;
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+.nav{
     text-decoration: none;
-    color: #333;
+    color: #0a84ff;
     font-weight: 600;
     transition: 0.3s;
 }
 
-nav ul li a: hover {
+nav: hover {
     color: #007bff; /* Adjust hover color */
 }
 
@@ -149,22 +138,6 @@ nav ul li a: hover {
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
     background-color: #c4c9cc;
   }
-}
-.typing {
-  width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid #000;
-  animation: typing 6s steps(90, end) forwards, blink 0.7s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink {
-  50% { border-color: transparent }
 }
 
 /* === Section === */
