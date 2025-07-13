@@ -1,4 +1,4 @@
-/* === Reset & Base === */Add commentMore actions
+/* === Reset & Base === */
 * {
   margin: 0;
   padding: 0;
@@ -11,100 +11,101 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  line-height: 1.6;
 }
 
 /* === Layout Containers === */
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Header Styles */
+/* === Header === */
 header {
-    background: #c4c9cc; /* Adjust as needed */
-    padding: 20px 0;
-    height: auto;
-    max-height: 180px;
-    color: 
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    max-height: auto;
-    margin: 0 auto;
-    padding: 0 20px;
+  background: #c4c9cc;
+  padding: 20px 0;
+  color: #333;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    width: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .logo-img {
-    width: 20px; /* Adjust size as needed */
-    height: auto;
-    max-height: auto;
-    margin-right: auto;
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333; /* Adjust text color */
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
 }
 
 .logo p {
-    font-size: 14px;
-    color: #666;
-    margin-left: 5px;
-}
-}
-
-.nav{
-    text-decoration: none;
-    color: #0a84ff;
-    font-weight: 600;
-    transition: 0.3s;
+  font-size: 14px;
+  color: #666;
+  margin-left: 5px;
 }
 
-nav: hover {
-    color: #007bff; /* Adjust hover color */
+/* === Navigation === */
+nav {
+  display: flex;
+  gap: 1rem;
 }
 
-/* Hero Section */
+.nav {
+  text-decoration: none;
+  color: #0a84ff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav:hover {
+  color: #007bff;
+}
+
+/* === Hero Section === */
 .hero {
-    text-align: left;
-    padding: 20px 5%;
-    background-color: #f4f4f9;
+  text-align: left;
+  padding: 20px 5%;
+  background-color: #f4f4f9;
 }
 
 .hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-.hero h2 {
-    color: #0a84ff;
-      }
-.hero .btn {
-    background-color: #0a84ff;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    display: inline-block;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
+.hero h2 {
+  color: #0a84ff;
+}
+
+.hero .btn {
+  background-color: #0a84ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #007bff;
+}
+
+/* === Animated Box Paragraph === */
 .animated-box {
   display: inline-block;
   padding: 20px;
@@ -114,7 +115,7 @@ nav: hover {
   background-color: #c4c9cc;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   opacity: 0;
-  transform: scale(1.8);
+  transform: scale(0.8);
   animation: boxIn 2s ease forwards;
 }
 
@@ -128,21 +129,20 @@ nav: hover {
   60% {
     opacity: 0.8;
     transform: scale(1.05);
-    border-color: #c4c9cc;
+    border-color: #0a84ff;
     box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
   }
   100% {
     opacity: 1;
     transform: scale(1);
-    border-color: auto;
+    border-color: #0a84ff;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
-    background-color: #c4c9cc;
   }
 }
 
-/* === Section === */
+/* === General Section === */
 .section {
-  padding: 2rem 2rem;
+  padding: 2rem;
   background-color: #f4f4f9;
 }
 
@@ -170,6 +170,7 @@ nav: hover {
   border-radius: 8px;
   transition: transform 0.3s;
 }
+
 .animated-box:hover,
 .service-item:hover,
 .product-item:hover {
@@ -182,7 +183,7 @@ nav: hover {
   margin-bottom: 0.5rem;
 }
 
-/* === About Section === */
+/* === Contact & About === */
 .section.contact p {
   margin-bottom: 1rem;
   text-align: center;
@@ -250,18 +251,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* === Responsive === */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-    color: #0a84ff;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+/* === Section Headings === */
 .section-heading {
   color: #0a84ff;
 }
@@ -273,4 +263,16 @@ footer a:hover {
 
 .section-link:hover {
   text-decoration: underline;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
