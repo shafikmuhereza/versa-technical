@@ -103,9 +103,10 @@ nav ul li a: hover {
 .hero h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #0a84ff;
 }
-
+.hero h2 {
+    color: #0a84ff;
+      }
 .hero .btn {
     background-color: #0a84ff;
     color: white;
