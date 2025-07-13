@@ -58,22 +58,30 @@ header {
 }
 
 /* === Navigation === */
-nav {
+/* Flex layout for nav */
+.main-nav {
   display: flex;
-  gap: 1rem;
+  gap: 20px;
+  justify-content: center; /* or space-between */
+  align-items: center;
+  padding: 10px 0;
 }
 
-.nav {
-  text-decoration: none;
+/* Style for nav links */
+.main-nav .nav {
   color: #0a84ff;
+  text-decoration: none;
   font-weight: 600;
-  transition: 0.3s;
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 4px;
 }
 
-.nav:hover {
-  color: #007bff;
+/* Hover effect */
+.main-nav .nav:hover {
+  color: #ffffff;
+  background-color: #0a84ff;
 }
-
 /* === Hero Section === */
 .hero {
   text-align: left;
