@@ -53,17 +53,17 @@ header {
 
 .logo {
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 .logo-img {
-  width: 20px;
+  width: auto;
   height: auto;
-  margin-right: 10px;
+  margin-right: auto;
 }
 
 .logo-text {
-  font-size: 24px;
+  font-size: auto;
   font-weight: bold;
   color: #333;
 }
