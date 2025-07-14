@@ -385,3 +385,22 @@ footer a:hover {
     font-size: 0.85rem;
   }
 }
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+    padding: 0 10px;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 10px 0;
+    display: block;
+  }
+}
