@@ -54,7 +54,7 @@ header {
 
 .logo {
   display: flex;
-  align-items: flex-start;
+  align-items: left;
 }
 
 .logo-img {
