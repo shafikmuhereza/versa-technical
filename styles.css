@@ -1,7 +1,7 @@
 /* === Reset & Base === */
 * {
-  margin: auto;
-  padding: auto;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -35,10 +35,10 @@ body {
 
 /* === Layout Containers === */
 .container {
-  width: 100%;
-  max-width: 100%;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 60px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,10 +47,8 @@ body {
 /* === Header === */
 header {
   background: #cfc5be;
-  max-height: 250px;
-  margin: auto;
+  padding: 20px 0;
   color: #333;
-  align-items: left;
 }
 
 .logo {
@@ -59,7 +57,7 @@ header {
 }
 
 .logo-img {
-  width: auto;
+  width: 20px;
   height: auto;
   margin-right: 10px;
 }
@@ -73,7 +71,7 @@ header {
 .logo p {
   font-size: 14px;
   color: #666;
-  margin-left: auto;
+  margin-left: 5px;
 }
 
 /* === Navigation === */
@@ -84,7 +82,7 @@ nav ul {
   justify-content: center; /* or space-between or flex-end */
   align-items: center;
   padding: 0;
-  margin: auto;
+  margin: 0;
 }
 
 nav ul li {
@@ -96,9 +94,8 @@ nav ul li a {
   text-decoration: none;
   font-weight: 600;
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  margin: auto;
 }
 
 nav ul li a:hover {
@@ -201,7 +198,7 @@ nav ul li a:hover {
   transition: transform 0.3s;
 }
 
-
+.animated-box:hover,
 .service-item:hover,
 .product-item:hover {
   transform: translateY(-5px);
@@ -313,8 +310,8 @@ footer a:hover {
 /*===mobile display fix===*/
 @media (max-width: 768px) {
   .logo-img {
-    width: 24px;   /* or 30px */
-    height: 24px;
+    width: 80px;   /* or 30px */
+    height: 80px;
   }
 
   .logo-text {
@@ -329,11 +326,6 @@ footer a:hover {
     padding: 10px;
   }
 
-  /* Adjust logo */
-  .logo-img {
-    width: 30px;
-    height: 30px;
-  }
 
   .logo-text {
     font-size: 20px;
