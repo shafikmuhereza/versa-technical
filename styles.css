@@ -1,6 +1,6 @@
 /* === Reset & Base === */
 * {
-  margin: 1px;
+  margin: auto;
   padding: auto;
   box-sizing: border-box;
 }
@@ -58,8 +58,8 @@ header {
 }
 
 .logo-img {
-  width: auto;
-  height: auto;
+  width: 24px;
+  height: 24px;
   margin-right: 0;
 }
 
