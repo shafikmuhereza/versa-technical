@@ -46,7 +46,7 @@ body {
 
 /* === Header === */
 header {
-  background: #b8e5ff;
+  background: #cfc5be;
   padding: 20px 0;
   color: #333;
 }
@@ -139,7 +139,7 @@ nav ul li a:hover {
   padding: 20px;
   margin: 20px 0;
   border: none;
-  background-color: #e6f1f7;
+  background-color: #f7f4f2;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   opacity: 0;
   transform: scale(0.8);
@@ -162,7 +162,7 @@ nav ul li a:hover {
   100% {
     opacity: 1;
     transform: scale(1);
-    border-color: #f4f4f9;
+    border-color: #f7f4f2;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
   }
 }
