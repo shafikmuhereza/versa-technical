@@ -35,8 +35,8 @@ body {
 
 /* === Layout Containers === */
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -57,16 +57,12 @@ header {
 }
 
 .logo-img {
-  width: 20px;
+  width: auto;
   height: auto;
   margin-right: 10px;
 }
 
-.logo-text {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-}
+
 
 .logo p {
   font-size: 14px;
@@ -310,8 +306,8 @@ footer a:hover {
 /*===mobile display fix===*/
 @media (max-width: 768px) {
   .logo-img {
-    width: 80px;   /* or 30px */
-    height: 80px;
+    width: 200px;   /* or 30px */
+    height: 200px;
   }
 
   .logo-text {
