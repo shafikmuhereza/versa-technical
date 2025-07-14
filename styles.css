@@ -48,7 +48,7 @@ body {
 header {
   background: #cfc5be;
   padding: 20px 0;
-  margin: 10px;
+  margin: auto;
   color: #333;
 }
 
@@ -83,7 +83,7 @@ nav ul {
   justify-content: center; /* or space-between or flex-end */
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: auto;
 }
 
 nav ul li {
@@ -95,7 +95,7 @@ nav ul li a {
   text-decoration: none;
   font-weight: 600;
   padding: 8px 16px;
-  border-radius: 4px;
+  border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
