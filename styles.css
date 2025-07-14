@@ -50,6 +50,7 @@ header {
   max-height: 250px;
   margin: auto;
   color: #333;
+  align-items: left;
 }
 
 .logo {
@@ -305,7 +306,7 @@ footer a:hover {
 
   header nav ul {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
 }
 
