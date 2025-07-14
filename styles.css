@@ -1,7 +1,7 @@
 /* === Reset & Base === */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 1px;
+  padding: auto;
   box-sizing: border-box;
 }
 
@@ -38,7 +38,7 @@ body {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,6 +47,7 @@ body {
 /* === Header === */
 header {
   background: #cfc5be;
+  max-height: 250px;
   margin: auto;
   color: #333;
 }
