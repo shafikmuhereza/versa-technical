@@ -36,9 +36,9 @@ body {
 /* === Layout Containers === */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +47,6 @@ body {
 /* === Header === */
 header {
   background: #cfc5be;
-  padding: 20px 0;
   margin: auto;
   color: #333;
 }
