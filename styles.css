@@ -72,7 +72,7 @@ header {
 .logo p {
   font-size: 14px;
   color: #666;
-  margin-left: 5px;
+  margin-left: auto;
 }
 
 /* === Navigation === */
@@ -200,7 +200,7 @@ nav ul li a:hover {
   transition: transform 0.3s;
 }
 
-.animated-box:hover,
+
 .service-item:hover,
 .product-item:hover {
   transform: translateY(-5px);
@@ -360,7 +360,7 @@ footer a:hover {
   .hero .btn {
     width: 100%;
     text-align: center;
-    padding: 12px;
+    padding: 5px;
     font-size: 1em;
   }
 
