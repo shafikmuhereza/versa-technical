@@ -57,9 +57,9 @@ header {
 }
 
 .logo-img {
-  width: 40px;
-  height: 40px;
-  margin-right: auto;
+  width: auto;
+  height: auto;
+  margin-right: 0;
 }
 
 .logo-text {
