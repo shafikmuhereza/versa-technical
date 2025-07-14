@@ -311,6 +311,16 @@ footer a:hover {
 
 /*===mobile display fix===*/
 @media (max-width: 768px) {
+  .logo-img {
+    width: 24px;   /* or 30px */
+    height: 24px;
+  }
+
+  .logo-text {
+    font-size: 18px; /* shrink text too if needed */
+  }
+}
+@media (max-width: 768px) {
   /* Stack container elements vertically */
   .container {
     flex-direction: column;
