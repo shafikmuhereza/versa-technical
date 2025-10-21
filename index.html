@@ -39,30 +39,24 @@
 </header>
 
 
- <script>
-const images = [
-  'iso.jpg',
-  'img9.jpg',
-  'img11.jpg',
-  'img8.jpg',
-  'img3.jpg',
-  'img12.jpg',
-];
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const images = ['iso.jpg','img9.jpg','img11.jpg','img8.jpg','img3.jpg','img12.jpg'];
+  let i = 0;
+  const her = document.getElementById('her');
 
-let i = 0;
-const her = document.getElementById('her');
+  function changeBackground() {
+    her.style.backgroundImage = `url(${images[i]})`;
+    her.style.backgroundSize = 'cover';
+    her.style.backgroundPosition = 'center';
+    i = (i + 1) % images.length;
+  }
 
-function changeBackground() {
-  her.style.backgroundImage = `url(${images[i]})`;
-  i = (i + 1) % images.length;
-}
-
-// Initial background
-changeBackground();
-
-// Change every 5 seconds
-setInterval(changeBackground, 5000);
+  changeBackground();
+  setInterval(changeBackground, 5000);
+});
 </script>
+
 
 
 
@@ -110,6 +104,7 @@ setInterval(changeBackground, 5000);
     </footer>
 </body>
 </html>
+
 
 
 
