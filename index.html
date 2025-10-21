@@ -15,7 +15,7 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="hero">
+    <header id="her">
   <div class="container">
     <div class="logo">
       <a href="index.html">
@@ -48,10 +48,10 @@ const images = [
 ];
 
 let i = 0;
-const hero = document.getElementById('hero');
+const her = document.getElementById('her');
 
 function changeBackground() {
-  hero.style.backgroundImage = `url(${images[i]})`;
+  her.style.backgroundImage = `url(${images[i]})`;
   i = (i + 1) % images.length;
 }
 
@@ -108,6 +108,7 @@ setInterval(changeBackground, 5000);
     </footer>
 </body>
 </html>
+
 
 
 
