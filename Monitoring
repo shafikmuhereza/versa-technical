@@ -1,0 +1,152 @@
+<section class="services-comparison">
+  <style>
+    .services-comparison {
+      background: #f9fafc;
+      padding: 60px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      font-family: "Poppins", sans-serif;
+    }
+
+    .services-comparison h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .comparison-table {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-collapse: collapse;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .comparison-header {
+      display: contents;
+      font-weight: bold;
+      background: #222;
+      color: #fff;
+    }
+
+    .comparison-row {
+      display: contents;
+    }
+
+    .column-title, .column {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    .comparison-row:nth-child(even) .column {
+      background: #f5f5f5;
+    }
+
+    .comparison-row.highlight .column {
+      background: #e8f5e9;
+      font-weight: 600;
+      color: #1b5e20;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .comparison-table {
+        display: block;
+      }
+
+      .comparison-header {
+        display: none;
+      }
+
+      .comparison-row {
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+
+      .column {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+      }
+
+      .column::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #333;
+      }
+    }
+  </style>
+
+  <h2>Our Core Service Offerings</h2>
+  <div class="comparison-table">
+    <div class="comparison-header">
+      <div class="column-title">Service</div>
+      <div class="column-title">Focus</div>
+      <div class="column-title">Key Benefits</div>
+      <div class="column-title">IoT Integration</div>
+    </div>
+
+    <div class="comparison-row highlight">
+      <div class="column" data-label="Service">IoT-Based Asset Management</div>
+      <div class="column" data-label="Focus">Real-time tracking, analytics, and predictive maintenance</div>
+      <div class="column" data-label="Key Benefits">Maximized uptime, data-driven decisions, complete asset visibility</div>
+      <div class="column" data-label="IoT Integration">✔ Fully Integrated (Sensors + Cloud + Dashboards)</div>
+    </div>
+
+    <div class="comparison-row">
+      <div class="column" data-label="Service">Automation & Control Systems</div>
+      <div class="column" data-label="Focus">Industrial and process automation for equipment and facilities</div>
+      <div class="column" data-label="Key Benefits">Improved productivity, reduced manual errors, energy efficiency</div>
+      <div class="column" data-label="IoT Integration">Optional (via IoT gateways)</div>
+    </div>
+
+    <div class="comparison-row">
+      <div class="column" data-label="Service">Power & Energy Systems</div>
+      <div class="column" data-label="Focus">UPS, solar, and generator system integration and optimization</div>
+      <div class="column" data-label="Key Benefits">Stable power supply, longer equipment life, lower downtime</div>
+      <div class="column" data-label="IoT Integration">IoT-ready (for monitoring & analytics)</div>
+    </div>
+
+    <div class="comparison-row">
+      <div class="column" data-label="Service">Building Automation</div>
+      <div class="column" data-label="Focus">Smart control of HVAC, security, and energy systems within buildings</div>
+      <div class="column" data-label="Key Benefits">Comfort, energy savings, and centralized control</div>
+      <div class="column" data-label="IoT Integration">✔ Fully Integrated with sensors and dashboards</div>
+    </div>
+
+    <div class="comparison-row">
+      <div class="column" data-label="Service">Lighting Control Systems</div>
+      <div class="column" data-label="Focus">Automated indoor and outdoor lighting solutions</div>
+      <div class="column" data-label="Key Benefits">Reduced energy costs, smart scheduling, improved safety</div>
+      <div class="column" data-label="IoT Integration">✔ Integrated (Smart sensors + remote management)</div>
+    </div>
+
+    <div class="comparison-row">
+      <div class="column" data-label="Service">Remote Solar Management Systems</div>
+      <div class="column" data-label="Focus">Monitoring and optimization of distributed solar installations</div>
+      <div class="column" data-label="Key Benefits">Real-time performance data, fault alerts, and energy yield insights</div>
+      <div class="column" data-label="IoT Integration">✔ Fully Cloud-Connected (IoT gateways + analytics)</div>
+    </div>
+
+    <div class="comparison-row">
+      <div class="column" data-label="Service">Agricultural Monitoring Solutions</div>
+      <div class="column" data-label="Focus">Smart irrigation, soil health, and livestock monitoring</div>
+      <div class="column" data-label="Key Benefits">Optimized resource use, increased yield, and remote farm insights</div>
+      <div class="column" data-label="IoT Integration">✔ IoT sensors + cloud dashboards</div>
+    </div>
+
+    <div class="comparison-row">
+      <div class="column" data-label="Service">Remote Monitoring Solutions</div>
+      <div class="column" data-label="Focus">Surveillance, environmental, and system condition monitoring</div>
+      <div class="column" data-label="Key Benefits">24/7 visibility, early event detection, remote access</div>
+      <div class="column" data-label="IoT Integration">✔ Integrated via IoT cloud</div>
+    </div>
+  </div>
+</section>
