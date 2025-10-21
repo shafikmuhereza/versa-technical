@@ -85,12 +85,36 @@
     </footer>
 
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const images = ['iso.jpg','img9.jpg','img11.jpg','img8.jpg','img3.jpg','img12.jpg'];
+  const preloaded = images.map(src => {
+    const img = new Image();
+    img.src = src;
+    return img;
+  });
+
+  let i = 0;
+  const her = document.getElementById('her');
+  if (!her) return;
+
+  function changeBackground() {
+    const nextImage = preloaded[i];
+    if (nextImage.complete) {
+      her.style.backgroundImage = `url("${nextImage.src}")`;
+      i = (i + 1) % preloaded.length;
+    }
+  }
+
+  changeBackground(); // initial
+  setInterval(changeBackground, 6000); // cycle every 6 seconds
+});
+</script>
 
 
 
 
-
-    <script>
+   <!--- <script>
 document.addEventListener('DOMContentLoaded', () => {
   const images = ['iso.jpg','img9.jpg','img11.jpg','img8.jpg','img3.jpg','img12.jpg'];
   let i = 0;
@@ -105,13 +129,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   changeBackground();
   /** setTimeout(() => setInterval(changeBackground, 4000), 2000);**/
-  setInterval(changeBackground, 5000);
+  setInterval(changeBackground, 6000);
 });
-</script>
+</script> --->
 
 
 </body>
 </html>
+
 
 
 
