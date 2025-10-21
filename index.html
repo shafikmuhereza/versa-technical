@@ -15,7 +15,7 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header id="hero">
   <div class="container">
     <div class="logo">
       <a href="index.html">
@@ -34,6 +34,33 @@
     </nav>
   </div>
 </header>
+
+
+
+<script>
+const images = [
+  'iso.jpg',
+  'img2.jpg',
+  'img3.jpg',
+  'img4.jpg'
+];
+
+let i = 0;
+const hero = document.getElementById('hero');
+
+function changeBackground() {
+  hero.style.backgroundImage = `url(${images[i]})`;
+  i = (i + 1) % images.length;
+}
+
+// Initial background
+changeBackground();
+
+// Change every 5 seconds
+setInterval(changeBackground, 5000);
+</script>
+
+
 
     <main>
         <!-- Hero Section -->
