@@ -84,29 +84,7 @@
        
     </footer>
 
-<!--<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const images = [
-   'iso.jpg','img9.jpg','img11.jpg','img8.jpg','img3.jpg','img12.jpg'
-  ];
 
-  const header = document.getElementById('her');
-  const sliderTrack = document.createElement('div');
-  sliderTrack.classList.add('slider-track');
-
-  // Duplicate image list to create seamless loop
-  const allImages = [...images, ...images];
-
-  allImages.forEach(src => {
-    const img = document.createElement('img');
-    img.src = src;
-    img.alt = 'A5 Systems Background';
-    sliderTrack.appendChild(img);
-  });
-
-  header.appendChild(sliderTrack);
-});
-</script>-->
 
 
 
@@ -126,14 +104,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   changeBackground();
-   setTimeout(() => setInterval(changeBackground, 5000), 1000);
-  /**setInterval(changeBackground, 5000);**/
+  /** setTimeout(() => setInterval(changeBackground, 4000), 2000);**/
+  setInterval(changeBackground, 5000);
 });
-</script>--->
+</script>
 
 
 </body>
 </html>
+
 
 
 
