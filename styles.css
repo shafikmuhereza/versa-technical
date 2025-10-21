@@ -76,13 +76,13 @@ header {
 
 
 
-#hero {
+#her {
   position: relative;
   height: 400px;
   overflow: hidden;
 }
 
-#hero::before {
+#her::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -93,7 +93,7 @@ header {
 }
 
 /* Overlay for readability */
-#hero::after {
+#her::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -101,7 +101,7 @@ header {
   z-index: 1;
 }
 
-#hero {
+#her {
   height: 400px; /* adjust to suit */
   background-size: cover;
   background-position: center;
@@ -450,3 +450,4 @@ footer a:hover {
     display: block;
   }
 }
+
