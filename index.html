@@ -13,6 +13,32 @@
     
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9204998406606528"
      crossorigin="anonymous"></script>
+
+    <script>
+const images = [
+  'iso.jpg',
+  'img9.jpg',
+  'img11.jpg',
+  'img8.jpg',
+  'img3.jpg'
+  'img12.jpg'
+];
+
+let i = 0;
+const her = document.getElementById('her');
+
+function changeBackground() {
+  her.style.backgroundImage = `url(${images[i]})`;
+  i = (i + 1) % images.length;
+}
+
+// Initial background
+changeBackground();
+
+// Change every 5 seconds
+setInterval(changeBackground, 5000);
+</script>
+
 </head>
 <body>
     <header id="her">
@@ -37,30 +63,6 @@
 
 
 
-<script>
-const images = [
-  'iso.jpg',
-  'img9.jpg',
-  'img11.jpg',
-  'img8.jpg',
-  'img3.jpg'
-  'img12.jpg'
-];
-
-let i = 0;
-const her = document.getElementById('her');
-
-function changeBackground() {
-  her.style.backgroundImage = `url(${images[i]})`;
-  i = (i + 1) % images.length;
-}
-
-// Initial background
-changeBackground();
-
-// Change every 5 seconds
-setInterval(changeBackground, 5000);
-</script>
 
 
 
@@ -108,6 +110,7 @@ setInterval(changeBackground, 5000);
     </footer>
 </body>
 </html>
+
 
 
 
