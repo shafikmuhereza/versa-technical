@@ -116,7 +116,7 @@ header {
 }
 
 #her {
-  height: 400px; /* adjust to suit */
+  height: 200px; /* adjust to suit */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -464,6 +464,7 @@ footer a:hover {
     display: block;
   }
 }
+
 
 
 
