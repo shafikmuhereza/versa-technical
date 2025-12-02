@@ -80,7 +80,7 @@ header {
 
 #her {
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -116,7 +116,7 @@ header {
 }
 
 #her {
-  height: 200px; /* adjust to suit */
+  height: 300px; /* adjust to suit */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -464,6 +464,7 @@ footer a:hover {
     display: block;
   }
 }
+
 
 
 
