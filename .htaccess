@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://afive.cc/$1 [L,R=301]
+
+# Remove www
+RewriteCond %{HTTP_HOST} ^www\.afive\.cc$ [NC]
+RewriteRule ^(.*)$ https://afive.cc/$1 [L,R=301]
