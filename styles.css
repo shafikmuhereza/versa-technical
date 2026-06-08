@@ -86,7 +86,10 @@ nav ul li a:hover {
     color: var(--primary);
     font-size: clamp(1.2rem, 3vw, 2rem);
 }
-
+.hero h3 {
+    color: var(--primary);
+    font-size: clamp(1.2rem, 3vw, 2rem);
+}
 /*** PROFFESIONAL BUTTON **/
 
 .btn {
