@@ -36,7 +36,7 @@ body {
 
 header {
     background: white;
-    position: sticky;
+    position: auto;
     top: 0;
     z-index: 1000;
     box-shadow: var(--shadow-sm);
