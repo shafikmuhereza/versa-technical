@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img" aria-label="Diagram: equipment with sensors sends data through a gateway to the cloud, shown on your phone or computer">
+<!--
+  GRAPHIC ONLY diagram: equipment > sensors and gateway > secure cloud > phone or PC. Used on Monitoring.html.
+  The words inside the picture are part of the graphic: edit the <text> lines to change them. Arrows are the dashed paths at the bottom.
+-->
+<defs><marker id="ar" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1l7 4-7 4z" fill="#00a2ff"/></marker></defs>
+<rect width="1000" height="300" rx="18" fill="#f3f6fc"/>
+<g font-family="system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif" font-size="20" font-weight="700" fill="#0a1f44" text-anchor="middle">
+<!-- equipment -->
+<rect x="40" y="70" width="150" height="130" rx="16" fill="#fff" stroke="#0a1f44" stroke-width="4"/>
+<circle cx="115" cy="135" r="26" fill="none" stroke="#0052cc" stroke-width="6"/><circle cx="115" cy="135" r="8" fill="#0052cc"/>
+<g stroke="#0052cc" stroke-width="7" stroke-linecap="round"><path d="M115 92v10M115 168v10M72 135h10M148 135h10M85 105l7 7M138 158l7 7M145 105l-7 7M92 158l-7 7"/></g>
+<text x="115" y="236">Your equipment</text>
+<!-- sensors + gateway -->
+<rect x="285" y="88" width="140" height="94" rx="14" fill="#fff" stroke="#0a1f44" stroke-width="4"/>
+<g fill="none" stroke="#0052cc" stroke-width="6" stroke-linecap="round"><path d="M320 122a36 36 0 0 1 70 0"/><path d="M332 138a20 20 0 0 1 46 0"/></g><circle cx="355" cy="156" r="6" fill="#0052cc"/>
+<text x="355" y="236">Sensors &amp; gateway</text>
+<!-- cloud -->
+<path d="M560 176h-40a30 30 0 0 1 2-60 44 44 0 0 1 84-8 34 34 0 0 1 14 68z" transform="translate(30 6)" fill="#fff" stroke="#0a1f44" stroke-width="4" stroke-linejoin="round"/>
+<g stroke="#00a2ff" stroke-width="6" stroke-linecap="round"><path d="M590 168v-28M610 168v-42M630 168v-20"/></g>
+<text x="608" y="236">Secure cloud</text>
+<!-- phone -->
+<rect x="790" y="58" width="90" height="148" rx="16" fill="#fff" stroke="#0a1f44" stroke-width="4"/>
+<rect x="804" y="80" width="62" height="96" rx="6" fill="#eaf2ff"/>
+<g fill="#0052cc"><rect x="812" y="140" width="10" height="28" rx="2"/><rect x="828" y="122" width="10" height="46" rx="2"/><rect x="844" y="104" width="10" height="64" rx="2"/></g>
+<circle cx="835" cy="192" r="5" fill="#0a1f44"/>
+<text x="880" y="236" text-anchor="middle" dx="-45">Your phone or PC</text>
+</g>
+<g fill="none" stroke="#00a2ff" stroke-width="5" stroke-dasharray="4 10" stroke-linecap="round" marker-end="url(#ar)">
+<path d="M196 135H278"/><path d="M432 135H520"/><path d="M700 135H780"/></g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration of a chiller connected to a cooling tower with pipes">
+<!--
+  GRAPHIC ONLY (no text). Chiller connected to a cooling tower by pipes. Used on refrigeration-cooling-systems-uganda.html.
+  Colours: #0a1f44 navy outline, blues for equipment, #00a2ff for cold/steam accents.
+-->
+<!-- Colour gradients (background, chiller) -->
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3f0ff"/><stop offset="1" stop-color="#f7faff"/></linearGradient>
+<linearGradient id="ch" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b7bea"/><stop offset="1" stop-color="#0d3b8e"/></linearGradient>
+</defs>
+<!-- BACKGROUND -->
+<rect width="800" height="600" fill="url(#bg)"/>
+<!-- FLOOR -->
+<rect y="500" width="800" height="100" fill="#dbe7f7"/><rect y="500" width="800" height="8" fill="#c1d2ea"/>
+<!-- COOLING TOWER body and louvers -->
+<polygon points="450,210 650,210 690,500 410,500" fill="#eaf2ff" stroke="#0a1f44" stroke-width="5"/>
+<g stroke="#0a1f44" stroke-width="4" opacity=".75"><path d="M440 290h220M432 350h236M424 410h252M418 460h264"/></g>
+<!-- FAN housing and fan; steam rising above the tower -->
+<rect x="470" y="180" width="160" height="32" rx="6" fill="#0d3b8e" stroke="#0a1f44" stroke-width="5"/>
+<ellipse cx="550" cy="172" rx="66" ry="12" fill="#0a1f44"/><g stroke="#9cc4ff" stroke-width="5" stroke-linecap="round"><path d="M500 172h100"/></g>
+<g fill="none" stroke="#00a2ff" stroke-width="6" stroke-linecap="round"><path d="M520 140c-16-18 16-30 0-52"/><path d="M552 138c-16-18 16-30 0-52"/><path d="M584 140c-16-18 16-30 0-52"/></g>
+<!-- CHILLER unit with panel lines, label plate and indicator -->
+<rect x="70" y="330" width="260" height="170" rx="14" fill="url(#ch)" stroke="#0a1f44" stroke-width="5"/>
+<g stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".85"><path d="M100 372h200M100 400h200M100 428h200M100 456h200"/></g>
+<rect x="88" y="344" width="46" height="14" rx="4" fill="#fff"/><circle cx="300" cy="352" r="7" fill="#0f8a45"/>
+<!-- COOLANT PIPES between chiller and tower (outline, blue fill, highlight) -->
+<g fill="none" stroke="#0a1f44" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"><path d="M330 400H380V470H430"/><path d="M330 440H360V500"/></g>
+<g fill="none" stroke="#9cc4ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M330 400H380V470H430"/><path d="M330 440H360V500"/></g>
+<g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M362 393l10 7-10 7"/><path d="M402 463l10 7-10 7"/></g>
+<!-- COOL AIR symbol (snowflake) -->
+<g stroke="#00a2ff" stroke-width="6" stroke-linecap="round"><path d="M200 300v-40M180 280h40M186 266l28 28M214 266l-28 28"/></g>
+</svg>

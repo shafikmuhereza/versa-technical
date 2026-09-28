@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration of a house with solar panels on the roof, an inverter and a battery unit">
+<!--
+  GRAPHIC ONLY (no text). House with rooftop solar panels, inverter and battery. Used on solar-installation-uganda.html.
+  Edit colours by changing the hex values (#0a1f44 navy outline, #00a2ff/#0052cc blues). Elements are drawn back-to-front.
+-->
+<!-- Colour gradients used below (sky, panels, battery) -->
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bcdcff"/><stop offset="1" stop-color="#f3f8ff"/></linearGradient>
+<linearGradient id="pn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d3b8e"/><stop offset="1" stop-color="#2b7bea"/></linearGradient>
+<linearGradient id="bt" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00a2ff"/><stop offset="1" stop-color="#0052cc"/></linearGradient>
+</defs>
+<!-- SKY background -->
+<rect width="800" height="600" fill="url(#sky)"/>
+<!-- SUN rays -->
+<g stroke="#f5b301" stroke-width="8" stroke-linecap="round"><path d="M660 60v-26M660 200v26M600 130h-26M720 130h26M617 87l-19-19M703 173l19 19M617 173l-19 19M703 87l19-19"/></g>
+<!-- SUN -->
+<circle cx="660" cy="130" r="46" fill="#ffc933"/>
+<!-- CLOUDS -->
+<g fill="#fff" opacity=".95"><ellipse cx="150" cy="90" rx="60" ry="22"/><ellipse cx="190" cy="76" rx="40" ry="20"/><ellipse cx="420" cy="60" rx="50" ry="18"/><ellipse cx="452" cy="50" rx="32" ry="16"/></g>
+<!-- GROUND -->
+<rect y="490" width="800" height="110" fill="#dbe7f7"/><rect y="490" width="800" height="8" fill="#c1d2ea"/>
+<!-- HOUSE walls -->
+<rect x="90" y="300" width="330" height="192" fill="#fff" stroke="#0a1f44" stroke-width="5"/>
+<!-- ROOF -->
+<polygon points="66,306 255,160 444,306" fill="#0a1f44"/>
+<!-- SOLAR PANELS: rotated to sit on the roof slope (group + grid lines) -->
+<g transform="translate(255 160) rotate(37.6)">
+<g fill="url(#pn)" stroke="#fff" stroke-width="2"><rect x="14" y="-40" width="54" height="36" rx="2"/><rect x="72" y="-40" width="54" height="36" rx="2"/><rect x="130" y="-40" width="54" height="36" rx="2"/><rect x="188" y="-40" width="40" height="36" rx="2"/></g>
+<g stroke="#9cc4ff" stroke-width="1.5"><path d="M41 -40v36M99 -40v36M157 -40v36M208 -40v36M14 -22h54M72 -22h54M130 -22h54M188 -22h40"/></g>
+</g>
+<!-- DOOR -->
+<rect x="170" y="392" width="62" height="100" fill="#eaf2ff" stroke="#0a1f44" stroke-width="4"/><circle cx="220" cy="445" r="4" fill="#0a1f44"/>
+<!-- WINDOW -->
+<rect x="290" y="345" width="90" height="78" fill="#eaf2ff" stroke="#0a1f44" stroke-width="4"/><path d="M335 345v78M290 384h90" stroke="#0a1f44" stroke-width="3"/>
+<!-- INVERTER box (converts solar power for the building) with screen and buttons -->
+<rect x="470" y="352" width="76" height="110" rx="10" fill="#fff" stroke="#0a1f44" stroke-width="5"/>
+<rect x="484" y="368" width="48" height="30" rx="4" fill="#00a2ff"/><path d="M490 388l8-8 8 6 10-10 10 8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#0a1f44"><circle cx="492" cy="422" r="5"/><circle cx="508" cy="422" r="5"/><circle cx="524" cy="422" r="5"/></g>
+<!-- BATTERY unit with charge bars -->
+<rect x="600" y="340" width="110" height="122" rx="10" fill="#fff" stroke="#0a1f44" stroke-width="5"/>
+<g fill="url(#bt)"><rect x="618" y="358" width="74" height="16" rx="4"/><rect x="618" y="382" width="74" height="16" rx="4"/><rect x="618" y="406" width="74" height="16" rx="4"/><rect x="618" y="430" width="40" height="16" rx="4"/></g>
+<!-- POWER CABLES: dashed lines show energy flowing panels > inverter > battery -->
+<g fill="none" stroke="#00a2ff" stroke-width="5" stroke-dasharray="4 12" stroke-linecap="round">
+<path d="M436 262C480 262 508 300 508 346"/><path d="M548 410H598"/><path d="M468 410H424"/></g>
+<!-- ARROW head on the cable -->
+<path d="M508 336l-8-12 8 4 8-4z" fill="#00a2ff"/>
+</svg>

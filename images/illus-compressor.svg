@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration of an industrial air compressor with tank, motor, pressure gauge and control panel">
+<!--
+  GRAPHIC ONLY (no text). Industrial air compressor: tank, motor, pressure gauge, control panel. Used on air-compressor-services-uganda.html.
+  Colours: #0a1f44 navy outline, blues for the machine, red/green = status lights.
+-->
+<!-- Colour gradients (background, tank) -->
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8f1ff"/><stop offset="1" stop-color="#f7faff"/></linearGradient>
+<linearGradient id="tk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b7bea"/><stop offset="1" stop-color="#0d3b8e"/></linearGradient>
+</defs>
+<!-- BACKGROUND -->
+<rect width="800" height="600" fill="url(#bg)"/>
+<!-- FLOOR -->
+<rect y="500" width="800" height="100" fill="#dbe7f7"/><rect y="500" width="800" height="8" fill="#c1d2ea"/>
+<!-- CONTROL PANEL cabinet, screen and red/green status lights -->
+<rect x="60" y="270" width="96" height="200" rx="10" fill="#fff" stroke="#0a1f44" stroke-width="5"/>
+<rect x="74" y="288" width="68" height="46" rx="5" fill="#00a2ff"/><path d="M82 322l14-16 12 10 16-18 12 12" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="92" cy="366" r="8" fill="#d93025"/><circle cx="122" cy="366" r="8" fill="#0f8a45"/><rect x="76" y="396" width="64" height="12" rx="3" fill="#c1d2ea"/><rect x="76" y="418" width="64" height="12" rx="3" fill="#c1d2ea"/>
+<!-- TANK feet -->
+<rect x="200" y="470" width="26" height="40" fill="#0a1f44"/><rect x="500" y="470" width="26" height="40" fill="#0a1f44"/><rect x="170" y="506" width="380" height="14" rx="4" fill="#0a1f44"/>
+<!-- AIR TANK (main body) and its highlight -->
+<rect x="170" y="330" width="430" height="140" rx="70" fill="url(#tk)" stroke="#0a1f44" stroke-width="5"/>
+<rect x="215" y="346" width="340" height="14" rx="7" fill="#fff" opacity=".28"/>
+<!-- ELECTRIC MOTOR with cooling fins -->
+<rect x="230" y="222" width="150" height="104" rx="14" fill="#0d3b8e" stroke="#0a1f44" stroke-width="5"/>
+<g stroke="#5ea0f5" stroke-width="5" stroke-linecap="round"><path d="M256 242v64M282 242v64M308 242v64M334 242v64M360 242v64"/></g>
+<!-- PUMP unit and its wheel -->
+<rect x="380" y="246" width="86" height="80" rx="10" fill="#eaf2ff" stroke="#0a1f44" stroke-width="5"/>
+<circle cx="423" cy="286" r="20" fill="none" stroke="#0a1f44" stroke-width="5"/><circle cx="423" cy="286" r="5" fill="#0a1f44"/>
+<!-- PIPE from pump to tank -->
+<path d="M300 222v-22h120v46" fill="none" stroke="#0a1f44" stroke-width="5"/>
+<!-- PRESSURE GAUGE: stem, dial, tick marks and red needle -->
+<rect x="500" y="290" width="14" height="42" fill="#0a1f44"/>
+<circle cx="507" cy="260" r="44" fill="#fff" stroke="#0a1f44" stroke-width="6"/>
+<g stroke="#0a1f44" stroke-width="3" stroke-linecap="round"><path d="M507 222v9M473 260h9M541 260h9M483 236l6 6M531 236l-6 6"/></g>
+<path d="M507 260l22-24" stroke="#d93025" stroke-width="5" stroke-linecap="round"/><circle cx="507" cy="260" r="6" fill="#0a1f44"/>
+<!-- AIR OUTLET PIPE with shut-off valve -->
+<path d="M600 405H700V300" fill="none" stroke="#0a1f44" stroke-width="16" stroke-linejoin="round"/>
+<path d="M600 405H700V300" fill="none" stroke="#9cc4ff" stroke-width="8" stroke-linejoin="round"/>
+<circle cx="650" cy="405" r="20" fill="#d93025" stroke="#0a1f44" stroke-width="5"/><rect x="644" y="372" width="12" height="18" fill="#0a1f44"/>
+<!-- AIR flow lines leaving the outlet -->
+<g fill="none" stroke="#00a2ff" stroke-width="5" stroke-linecap="round"><path d="M716 280c18-10 18-22 0-32"/><path d="M736 290c26-14 26-34 0-48"/></g>
+</svg>
