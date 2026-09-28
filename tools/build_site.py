@@ -622,7 +622,7 @@ def steps_html(dark=False):
     return '<ol class="steps">\n' + "\n".join(f'  <li><h3>{t}</h3><p>{d}</p></li>' for t,d in STEPS) + '\n</ol>\n'
 
 # ================================================================== HOME
-TAGLINE = "Engineering Services | Systems integration | Industrial Electrical and Mechanical Engineering"
+TAGLINE = "General Engineering Services | Systems integration | Industrial Electrical and Mechanical Engineering"
 P1 = "We diagnose complex faults, upgrade legacy systems, and install and commission new equipment. We provide unmatched technical support."
 P2 = "Our portfolio spans a broad range of industrial equipment, UPS, Generators, compressors, and chillers, Remote monitoring solutions, Hybrid inverters, solar systems, Building management systems, and energy optimization"
 
